@@ -1,0 +1,16 @@
+Win32/
+ipch/
+Debug/
+Release/
+iseconfig/
+ipcore_dir/
+Working/
+Fonts/
+
+*~
+*#
+*.sdf
+*.suo
+*.opendb
+*.pdb
+*.filters

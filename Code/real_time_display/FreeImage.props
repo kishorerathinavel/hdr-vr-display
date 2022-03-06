@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <FREEIMAGE_HOME>G:\Dev\FreeImage3170Win32Win64\FreeImage</FREEIMAGE_HOME>
+    <FREEIMAGE_PLATFORM_PATH Condition="'$(Platform)'=='x64'">x64</FREEIMAGE_PLATFORM_PATH>
+    <FREEIMAGE_PLATFORM_PATH Condition="'$(Platform)'=='Win32'">x32</FREEIMAGE_PLATFORM_PATH>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(FREEIMAGE_HOME)\Dist\$(FREEIMAGE_PLATFORM_PATH);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LibraryPath>$(FREEIMAGE_HOME)\Dist\$(FREEIMAGE_PLATFORM_PATH);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
